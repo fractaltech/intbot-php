@@ -1,0 +1,16 @@
+{
+    "name": "fractal/intbot-php",
+    "description": "intbot for php",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kapil Verma",
+            "email": "kapv89@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
