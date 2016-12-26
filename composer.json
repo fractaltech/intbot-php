@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Flowapp\\Intbot": "src/"
+            "Flowapp\\Intbot\\": "src/"
         }
     }
 }
