@@ -56,7 +56,7 @@ class Client {
   public static function deleteRecords($token, $records) {
     return static::makeRequest('/records/delete', $token, [
       'record_ids' => array_map(function ($r) { return $r->id; }, $records)
-    ])
+    ]);
   }
 
   public static function moveRecords($token, $step, $records) {
