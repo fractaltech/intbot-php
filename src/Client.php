@@ -16,7 +16,7 @@ class Client {
     return static::instance();
   }
 
-  protected static function makeRequest($slug, $token, $json) {
+  protected static function makeRequest($slug, $token, $json=[]) {
     $res = static::instance()->request(
       'POST',
       'http://api.formapp.in/integration'.$slug,
