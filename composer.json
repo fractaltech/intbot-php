@@ -1,5 +1,5 @@
 {
-    "name": "fractal/intbot-php",
+    "name": "flowapp/intbot",
     "description": "intbot for php",
     "type": "metapackage",
     "license": "MIT",

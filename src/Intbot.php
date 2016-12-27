@@ -14,7 +14,7 @@ class Intbot {
       $process = Client::getFlowProcess($token);
       $fields = Client::getFields($token);
 
-      static::$_flows[$token] = new Flow($token, $process['statuses'], $process['steps'], $fields);
+      static::$_flows[$token] = new Flow($token, $process->statuses, $process->steps, $fields);
     }
   }
 
