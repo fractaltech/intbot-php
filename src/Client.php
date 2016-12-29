@@ -41,8 +41,8 @@ class Client {
     return static::makeRequest('/users', $token);
   }
 
-  public static function getRecords($token) {
-    return static::makeRequest('/records/list', $token);
+  public static function getRecords($token, $params=[]) {
+    return static::makeRequest('/records/list', $token, $params);
   }
 
   public static function uploadRecords($token, $step, $records) {
