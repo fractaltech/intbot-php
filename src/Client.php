@@ -34,15 +34,15 @@ class Client {
   }
 
   public static function getFields($token) {
-    return static::makeRequest('/fields', $token);
+    return static::makeRequest('/fields', $token)->fields;
   }
 
   public static function getUsers($token) {
-    return static::makeRequest('/users', $token);
+    return static::makeRequest('/users', $token)->users;
   }
 
   public static function getRecords($token, $params=[]) {
-    return static::makeRequest('/records/list', $token, $params);
+    return static::makeRequest('/records/list', $token, $params)->records;
   }
 
   public static function uploadRecords($token, $step, $records) {
