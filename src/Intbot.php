@@ -5,7 +5,7 @@ namespace Flowapp\Intbot;
 use GuzzleHttp;
 
 class Intbot {
-  protected static $flows = [];
+  protected static $_flows = [];
 
   public static function load() {
     $flowTokens = func_get_args();
@@ -31,6 +31,6 @@ class Intbot {
       throw new Exception('invalid token: `'.$token.'`');
     }
 
-    return satic::$_flows[$token];
+    return static::$_flows[$token];
   }
 }
